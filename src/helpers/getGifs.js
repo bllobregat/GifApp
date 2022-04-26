@@ -5,6 +5,8 @@ export const getGifs = async (query) => {
 		query
 	)}&limit=${limit}`;
 
+	const test = 'test';
+
 	const resp = await fetch(url);
 	const { data } = await resp.json();
 	const gifs = resp.ok ? data.map((gif) => {
