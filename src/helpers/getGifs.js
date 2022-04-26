@@ -4,9 +4,12 @@ export const getGifs = async (query) => {
 	const url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${encodeURI(
 		query
 	)}&limit=${limit}`;
-	
-	const newTest = " ";
-	
+
+<<<<<<< HEAD
+	const test = 'test';
+
+=======
+>>>>>>> parent of 7dcc496 (Added test)
 	const resp = await fetch(url);
 	const { data } = await resp.json();
 	const gifs = resp.ok ? data.map((gif) => {
