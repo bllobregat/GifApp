@@ -7,7 +7,6 @@ export const getGifs = async (query) => {
 
 <<<<<<< HEAD
 	const test = 'test';
-	const test2 = 'test2';
 
 =======
 >>>>>>> parent of 7dcc496 (Added test)
