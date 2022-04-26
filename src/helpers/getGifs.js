@@ -5,9 +5,12 @@ export const getGifs = async (query) => {
 		query
 	)}&limit=${limit}`;
 
+<<<<<<< HEAD
 	const test = 'test';
 	const test2 = 'test2';
 
+=======
+>>>>>>> parent of 7dcc496 (Added test)
 	const resp = await fetch(url);
 	const { data } = await resp.json();
 	const gifs = resp.ok ? data.map((gif) => {
