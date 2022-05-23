@@ -1,5 +1,4 @@
 const GridGifItem = ({ url, title }) => {
-	console.log(title);
 
 	return (
 		<div className="card">

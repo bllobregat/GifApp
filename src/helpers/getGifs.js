@@ -5,20 +5,17 @@ export const getGifs = async (query) => {
 		query
 	)}&limit=${limit}`;
 
-<<<<<<< HEAD
-	const test = 'test';
-
-=======
->>>>>>> parent of 7dcc496 (Added test)
 	const resp = await fetch(url);
 	const { data } = await resp.json();
-	const gifs = resp.ok ? data.map((gif) => {
-		return {
-			id: gif.id,
-			title: gif.title,
-			url: gif.images?.downsized_medium.url,
-		};
-	}) : [];
+	const gifs = resp.ok
+		? data.map((gif) => {
+				return {
+					id: gif.id,
+					title: gif.title,
+					url: gif.images?.downsized_medium.url,
+				};
+		  })
+		: [];
 
 	return gifs;
 };

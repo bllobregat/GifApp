@@ -42,3 +42,8 @@ img{
     margin-right: 10px;
     overflow: hidden;
 }
+
+button{
+    background-color: #4CAF50;
+    padding: 10px;
+}
